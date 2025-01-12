@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle, rgba(255, 204, 0, 1), rgba(0, 0, 0, 1));
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock-app {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.clock {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.clock-box {
+  background: black;
+  color: yellow;
+  padding: 25px 15px;
+  border-radius: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 10px rgba(255, 204, 0, 0.5);
+}
+
+.btns ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+button {
+  background: black;
+  border: 2px solid yellow;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: yellow;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: yellow;
+  color: black;
+  transform: scale(1.05);
+}
+
+button.active {
+  background: yellow;
+  color: black;
+  font-weight: bold;
+  box-shadow: 0 0 8px rgba(255, 204, 0, 0.8);
+}
+
+.flip-horizontal-bottom {
+  animation: flip-horizontal-bottom 0.6s cubic-bezier(0.45, 0.05, 0.55, 0.95)
+    both;
+}
